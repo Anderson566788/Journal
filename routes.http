@@ -1,0 +1,25 @@
+POST http://localhost:3000/publish
+Content-Type: application/json
+
+{
+    "title": "My first publication with node",
+    "author": "Anderson",
+    "text": "Node.js é uma plataforma poderosa para construir aplicações web usando JavaScript no backend."
+}
+
+###
+
+GET http://localhost:3000/publish?search=node
+
+###
+PUT http://localhost:3000/publish/28bbc105-646c-42d8-a27d-7290f8d63a4e
+Content-Type: application/json
+
+{
+    "title": "My second publication",
+    "author": "Anderson",
+    "text": "Com sua arquitetura baseada em eventos, o Node.js permite lidar com múltiplas conexões de forma eficiente."
+}
+
+###
+DELETE http://localhost:3000/publish/8775b763-9866-4b1c-80d3-e45151e2bb14
